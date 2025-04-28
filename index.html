@@ -22,14 +22,16 @@
     }
 
     function writeNumber(correctNumber) {
-        numberLow = correctNumber;
+        score = correctNumber;
         numberHigh = correctNumber;
+        updateView();
     }
 
     function istheNumberCorrect() {
          if(randomNumberCheck == correctNumber && writeNumber) {
          score++;
          }
+         updateView();
     }
    </script> 
 </body>

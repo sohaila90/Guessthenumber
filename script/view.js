@@ -1,6 +1,7 @@
-const numberLow = 1;
-const numberHigh = 20;
+let numberLow = 1;
+let numberHigh = 20;
 let score = 0;
+let correctNumber;
 
 updateView();
 function updateView() {
