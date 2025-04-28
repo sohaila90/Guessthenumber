@@ -3,9 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Guess the Number</title>
 </head>
 <body>
+    <div id="app"></div>
     
+    <script src="script/model.js"></script>
+    <script src="script/view.js"></script>
+   <script>
+    
+    // const numberLow = 1;
+    // const numberHigh = 20;
+    // let score = 0;
+
+    function randomNumberCheck() {
+        return Math.floor(Math.random() *20 +1);
+    }
+
+    function writeNumber(correctNumber) {
+        score = correctNumber;
+    }
+
+    function istheNumberCorrect() {
+         if(randomNumberCheck == correctNumber && writeNumber) {
+         score++;
+         }
+    }
+   </script> 
 </body>
 </html>
+
+
+<!-- Oppgave - Guess the Number
+Denne oppgaven løser du med: MVC, If/Else og Math.random().
+
+I denne oppgaven skal du lage et spill 
+hvor datamaskinen velger et tall og spilleren skal gjette 
+hvilket tall som er valgt. 
+Man skal få feedback på om man har gjettet for høyt, 
+for lavt eller gjettet tallet.
+
+Løs oppgaven med MVC.
+
+1. Lag et input felt hvor man kan skrive inn tall å tippe på 
+2. Lag en knapp som sjekker om tallet er for høyt, 
+for lavt eller om man har gjettet riktig. 
+3. Vis om man har gjettet for høyt eller for lavt 
+- eller riktig 4. Om man gjetter riktig 
+- vis det på skjermen på en artig måte -->
